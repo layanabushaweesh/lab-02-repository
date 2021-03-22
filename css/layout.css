@@ -1,0 +1,108 @@
+body{
+    width: 480px;
+    }
+  
+  header {
+  border: 2px black solid;
+  width: 480px;
+  height: 75px;
+  text-align: center;
+  line-height: 75px;
+  background-color: gray;
+  }
+  
+  section :nth-of-type(1) {
+    border: 2px black solid;
+    width: 480px;
+    height: 150px;
+    text-align: center;
+    line-height: 150px;
+    background-color: gray;
+  }
+  section :nth-of-type(2), 
+    section :nth-of-type(3) {
+    border: 2px black solid;
+    width: 480px;
+    height: 125px;
+    text-align: center;
+    line-height: 125px;
+    background-color: gray;
+  }
+  
+  
+  section :nth-of-type(4), section :nth-of-type(5),section :nth-of-type(6), section :nth-of-type(7) {
+    border: 2px black solid;
+    width: 240px;
+    height: 250px;
+    text-align: center;
+    line-height: 250px;
+    float: left;
+    background-color: gray;
+  }
+  
+  
+  footer {
+    border: 2px black solid;
+    width: 480px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    background-color: gray;
+    float: right;
+  }
+  
+  @media only screen and (min-width:768px){
+    body{
+      width: 960px;
+      text-align: center;
+      }
+  
+  header {
+    width: 960px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    background-color: gray;
+  }
+  section :nth-of-type(1) {
+    border: 2px black solid;
+    width: 200px;
+    height: 600px;
+    text-align: center;
+    line-height: 600px;
+    background-color: gray;
+    float: left;
+  }
+  section :nth-of-type(2), 
+    section :nth-of-type(3) {
+    border: 2px black solid;
+    width: 380px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    background-color: gray;
+    float: right;
+  }
+  
+  
+  section :nth-of-type(4), section :nth-of-type(5),section :nth-of-type(6), section :nth-of-type(7) {
+    border: 2px black solid;
+    width: 190px;
+    height: 250px;
+    text-align: center;
+    line-height: 250px;
+    float: left;
+    background-color: gray;
+  }
+  
+  
+  
+  footer {
+    width: 760px;
+    height: 150px;
+    text-align: center;
+    line-height: 150px;
+    background-color: gray;
+    float: left;
+  }
+  }  
