@@ -11,30 +11,12 @@
  }
 Animal.all = [];
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//GET the data for each objact (DOM)
  
 Animal.prototype.renderFirst = function() {
     const container = $('#photo-template').clone();
     $('main').append(container);
+
    container.find('h2').text(this.title);
    container.find('p').text(this.description);
    container.find('img').attr('src', this.image_url);
@@ -65,6 +47,7 @@ Animal.prototype.renderFirst = function() {
 
 
 
+//filter the image (DOM)
  
 Animal.prototype.renderFil = function() {
    let counter = 1;
@@ -74,6 +57,7 @@ Animal.prototype.renderFil = function() {
      }
    });
    if (counter === 0){
+
      const optClone = $('#filter').clone();
      $('#filter').after(optClone);
      optClone.text(this.keyword);
@@ -83,20 +67,24 @@ Animal.prototype.renderFil = function() {
    }
  };
  
-
-
-
-
- // filter selection event
+//The change event occurs when the value of an element has been changed
+//The change() method triggers the change event, or attaches a function to run when a change event occurs
+//event handler
+// filter selection event
  $('select').change(function() {
    
   Animal.all.forEach(element => {
      if ('default' === this.value){
+       // use . for class selector for att. that i put in first Dom
        $(`.${element.keyword}`).show();
      } else if (element.keyword !== this.value) {
+
+
        $(`.${element.keyword}`).hide();
+
      } else {
        $(`.${element.keyword}`).show();
      }
    });
  });
+ 
