@@ -1,9 +1,9 @@
 # lab-02-repository
-Number and name of feature: __Display images______________________________
+Number and name of feature: ________________________________
 
 Estimate of time needed to complete: 1 hour_____
 
-Start time: __3:04___
+Start time: _____
 
 Finish time: _____
 
