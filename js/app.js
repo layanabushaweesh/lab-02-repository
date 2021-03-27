@@ -33,8 +33,9 @@ Animal.prototype.renderFirst = function() {
     method: 'get',
     dataType: 'json',
   };
-  
-  $.ajax('../data/page-1.json', ajaxSettings).then((data) => {
+  //get data from json profile
+  $.ajax('../data/page-1.json', ajaxSettings)
+  .then((data) => {
     data.forEach(item => {
       let newObject = new Animal(item);
       

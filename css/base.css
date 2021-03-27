@@ -1,3 +1,23 @@
 *{
     box-sizing: border-box;
 }
+body
+ {
+  box-sizing: border-box;
+  width: 1000px;
+  margin: auto;
+
+  font-family: 'Berkshire Swash', cursive;
+
+  background-color: whitesmoke;
+
+}
+h2,
+p {
+  font-family: 'Abel', sans-serif;
+
+}
+
+footer {
+  clear: both;
+}
